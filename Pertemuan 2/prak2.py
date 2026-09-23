@@ -39,3 +39,11 @@ else:
         print(a, end=" ")
         a, b = b, a + b
     print()
+
+
+n = int(input("Masukkan Jumlah Suku (n): "))
+
+print (f"Angka Ganjil Hingga {n} adalah:")
+for i in range(1, n + 1, 2):
+    print(i, end=" ")
+print()
