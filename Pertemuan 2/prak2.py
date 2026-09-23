@@ -24,3 +24,18 @@ elif angka3 > angka1 and angka3 > angka2:
     print("angka ketiga adalah yang terbesar")
 else:
     print("tidak ada angka yang terbesar")
+
+
+n = int (input("Masukkan Jumlah Suku (n): "))
+a, b = 0, 1
+
+if n <=0:
+    print("Masukkan angka positif")
+elif n == 1:
+    print("Deret Fibonacci: ", a)
+else:
+    print("Deret Fibonacci:", end=" ") 
+    for i in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+    print()
